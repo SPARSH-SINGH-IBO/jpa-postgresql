@@ -21,7 +21,7 @@ import com.springrest.springrest.services.CoursesServices;
 
 @RestController
 public class MyController {
-	
+
 	
 	@Autowired	
 	private CoursesServices coursesServices;  
@@ -34,8 +34,8 @@ public class MyController {
 	@GetMapping("/courses")
 	public ResponseEntity<List<Courses>> getCourses(){
 		
-		List<Courses> list = null; 
-		
+		List<Courses> list = null;
+
 		try {
 			list =coursesServices.getCourses(); 
 		}
